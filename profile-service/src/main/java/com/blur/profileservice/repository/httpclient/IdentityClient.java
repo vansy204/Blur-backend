@@ -8,7 +8,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(name = "identity-service", url = "${app.services.identity}", configuration = {AuthenticationRequestInterceptor.class})
+@FeignClient(name = "identity-service", url = "https://identityservice-tspe.onrender.com", configuration = {AuthenticationRequestInterceptor.class})
 public interface IdentityClient {
     @PostMapping(value = "/auth/introspect", produces = MediaType.APPLICATION_JSON_VALUE)
     ApiResponse<String> introspect(@RequestBody IntrospectRequest request);
