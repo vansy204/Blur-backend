@@ -3,7 +3,7 @@ FROM maven:3.9.9-amazoncorretto-21 AS build
 
 WORKDIR /app
 COPY pom.xml .
-
+COPY src ./src
 
 # Clean và package trong cùng một câu lệnh để tránh lỗi cache
 RUN mvn clean package -DskipTests
