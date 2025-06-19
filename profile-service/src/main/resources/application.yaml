@@ -11,5 +11,5 @@ spring:
 
 app:
   services:
-    identity: "http://identity-service:8080/identity"
+    identity: "https://identityservice-tspe.onrender.com/identity"
     notification: "http://notification-service:8082/notification"
