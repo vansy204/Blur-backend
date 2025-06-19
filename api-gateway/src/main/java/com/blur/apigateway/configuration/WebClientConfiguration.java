@@ -34,7 +34,7 @@ public class WebClientConfiguration {
     CorsWebFilter corsWebFilter() {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowCredentials(true); // 🔥 QUAN TRỌNG
-        configuration.setAllowedOrigins(List.of("http://localhost:3000")); // ❌ KHÔNG DÙNG '*'
+        configuration.setAllowedOrigins(List.of("https://vansy204.github.io")); // ❌ KHÔNG DÙNG '*'
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
 
