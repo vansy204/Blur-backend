@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @FeignClient(
         name = "profile-service",
-        url = "https://profile-service.onrender.com/profile",
+        url = "https://profile-service-t9f6.onrender.com/profile",
         configuration = {AuthenticationRequestInterceptor.class})
 public interface ProfileClient {
     @PostMapping(value = "/internal/users", produces = MediaType.APPLICATION_JSON_VALUE)
