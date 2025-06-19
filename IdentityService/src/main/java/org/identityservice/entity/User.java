@@ -20,6 +20,7 @@ public class User {
     String id;
 
     @Column(
+
             name = "username",
             unique = true,
             columnDefinition =

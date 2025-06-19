@@ -1,0 +1,35 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /identity
+spring:
+  datasource:
+    url: "jdbc:mysql://avnadmin:AVNS_ismfYA782-xb8G3pPiD@blur-db-phamvansy204-4a49.e.aivencloud.com:27745/defaultdb?ssl-mode=REQUIRED"
+    username: "avnadmin"
+    password: "AVNS_ismfYA782-xb8G3pPiD"
+  jpa:
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: create
+  data:
+    redis:
+      host: host.docker.internal
+      port: 6379
+outbound:
+  identity:
+    client-id: "948254557534-ca906iu2s6s1a33hcuvhv1pdhp9qmoti.apps.googleusercontent.com"
+    client-secret: ""
+    redirect-url: "http://localhost:3000/Authenticate"
+    grant-type: "authorization_code"
+
+jwt:
+  signerKey: "15dbefda1f522778324fdbb8810d843bc5716214e793da2040db05b9fefc5e84"
+  valid-duration: 3600 # in second
+  refreshable-duration: 360000 #second
+app:
+  services:
+    profile: "https://profile-service.onrender.com/profile"
+    notification: "https://notification-service/notification"
