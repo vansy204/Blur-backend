@@ -31,5 +31,5 @@ jwt:
   refreshable-duration: 360000 #second
 app:
   services:
-    profile: "https://profile-service.onrender.com/profile"
+    profile: "https://profile-service-t9f6.onrender.com/profile"
     notification: "https://notification-service/notification"
