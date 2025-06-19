@@ -4,10 +4,10 @@ server:
     context-path: /profile
 spring:
   neo4j:
-    uri: bolt://host.docker.internal:7687
+    uri: "neo4j+s://40f14266.databases.neo4j.io"
     authentication:
       username: "neo4j"
-      password: "12345678"
+      password: "ZVvmn4UtypyEh1aLxegraIKdM0y3QmOcia1kq3aOgUY"
 
 app:
   services:
