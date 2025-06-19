@@ -19,7 +19,7 @@ p
             - StripPrefix=1
 
         - id: profile_service
-          uri: http://profile-service:8081
+          uri: https://profile-service-t9f6.onrender.com/
           predicates:
             - Path=${app.api-prefix}/profile/**
           filters:
